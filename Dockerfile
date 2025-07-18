@@ -17,12 +17,18 @@ RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first to leverage Docker cache
-COPY requirements.txt .
-
-# Install Python dependencies
+# Install Python dependencies (basic packages only)
+# Note: Using basic dependencies to avoid version conflicts in CI/Docker
+# Full requirements.txt contains packages with compatibility issues
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir \
+        fastapi>=0.104.0 \
+        uvicorn>=0.24.0 \
+        python-multipart>=0.0.6 \
+        python-dotenv>=1.0.0 \
+        pydantic>=2.5.0 \
+        pydantic-settings>=2.1.0 \
+        structlog>=23.0.0
 
 # Copy application code
 COPY . .
