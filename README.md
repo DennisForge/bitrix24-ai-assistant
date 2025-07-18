@@ -318,14 +318,29 @@ Contact: [support@technosoft.dev](mailto:support@technosoft.dev)
 
 ## 🌟 Screenshots
 
-### **Calendar Interface**
-![Calendar Interface](docs/images/calendar-interface.png)
+### 🗓️ **Calendar Interface**
+```
+✨ Modern calendar view with drag & drop functionality
+📅 Multiple view modes: Month, Week, Day, List
+🎯 Smart scheduling with conflict detection
+🔄 Real-time synchronization across all devices
+```
 
-### **AI Chat Assistant**
-![AI Chat](docs/images/ai-chat.png)
+### 🤖 **AI Chat Assistant**
+```
+💬 Natural language processing in Serbian
+🧠 Smart task and event management
+⚡ Instant responses and suggestions
+🎯 Context-aware recommendations
+```
 
-### **Team Collaboration**
-![Team Collaboration](docs/images/team-collaboration.png)
+### 👥 **Team Collaboration**
+```
+🤝 Shared calendars with permission levels
+📊 Team productivity analytics
+🔔 Real-time notifications and updates
+📈 Performance tracking and insights
+```
 
 ## ⭐ Show Your Support
 
