@@ -119,6 +119,31 @@ python main.py
 
 Configure the application by editing the `.env` file with your Bitrix24 credentials and other settings.
 
+## 📦 Dependency Management
+
+**Important Note**: This project uses different dependency configurations for different use cases:
+
+### For Production/Docker Deployment:
+The Dockerfile and CI/CD use basic dependencies only to avoid version conflicts:
+```bash
+pip install fastapi uvicorn python-multipart python-dotenv pydantic pydantic-settings structlog
+```
+
+### For Full Development:
+If you need all features (AI, database, etc.), install from requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+**Note**: Some packages in requirements.txt may have version conflicts on certain systems.
+
+### For Basic Testing:
+Use requirements-basic.txt for minimal setup:
+```bash
+pip install -r requirements-basic.txt
+```
+
+**Troubleshooting**: If you encounter cryptography or other dependency conflicts, use the basic installation and add packages as needed.
+
 ## 📖 Documentation
 
 - [Installation & Setup Guide](docs/INSTALLATION_AND_SETUP.md)
