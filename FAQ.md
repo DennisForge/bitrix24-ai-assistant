@@ -190,7 +190,7 @@ O:
 - 📚 Dokumentacija: [Vodič za instalaciju](INSTALLATION_AND_SETUP.md)
 - 🐛 Problemi: [GitHub Issues](https://github.com/yourusername/bitrix24-ai-assistant/issues)
 - 💬 Zajednica: [Diskusije](https://github.com/yourusername/bitrix24-ai-assistant/discussions)
-- 📧 Enterprise: info@directadvertising.rs
+- 📧 Enterprise: support@technosoft.dev
 
 ### **P: Kako da prijavim greške?**
 O: Kreirajte GitHub issue sa:

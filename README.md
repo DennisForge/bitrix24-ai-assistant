@@ -137,14 +137,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🏢 Enterprise Support
 
-**Direct Advertising DOO** - Professional implementation and support services available.
+**TechnoSoft Solutions** - Professional implementation and support services available.
 
 - 💼 **Custom Integration**: Tailored Bitrix24 setups
 - 🎓 **Training**: Team onboarding and best practices
 - 🛠️ **Maintenance**: Ongoing support and updates
 - 📞 **Priority Support**: 24/7 technical assistance
 
-Contact: [info@directadvertising.rs](mailto:info@directadvertising.rs)
+Contact: [support@technosoft.dev](mailto:support@technosoft.dev)
 
 ## 🏗️ Architecture
 
@@ -282,14 +282,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🏢 Enterprise Support
 
-**Direct Advertising DOO** - Professional implementation and support services available.
+**TechnoSoft Solutions** - Professional implementation and support services available.
 
 - 💼 **Custom Integration**: Tailored Bitrix24 setups
 - 🎓 **Training**: Team onboarding and best practices
 - 🛠️ **Maintenance**: Ongoing support and updates
 - 📞 **Priority Support**: 24/7 technical assistance
 
-Contact: [info@directadvertising.rs](mailto:info@directadvertising.rs)
+Contact: [support@technosoft.dev](mailto:support@technosoft.dev)
 
 ## 🌟 Screenshots
 
@@ -313,7 +313,7 @@ If this project helped you, please give it a ⭐️!
 
 <div align="center">
 
-**Built with ❤️ by Direct Advertising DOO**
+**Built with ❤️ by TechnoSoft Solutions**
 
 🇷🇸 Made in Serbia • 🚀 Production Ready • 🤖 AI-Powered
 

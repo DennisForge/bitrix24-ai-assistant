@@ -437,7 +437,7 @@ Your Bitrix24 AI Assistant is now production-ready with:
 - ✅ Security hardening
 - ✅ Scalable architecture
 
-For enterprise deployment support, contact: info@directadvertising.rs
+For enterprise deployment support, contact: support@technosoft.dev
 
 ---
 

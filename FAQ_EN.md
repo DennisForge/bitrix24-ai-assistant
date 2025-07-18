@@ -190,7 +190,7 @@ A:
 - 📚 Documentation: [Installation Guide](INSTALLATION_AND_SETUP.md)
 - 🐛 Issues: [GitHub Issues](https://github.com/yourusername/bitrix24-ai-assistant/issues)
 - 💬 Community: [Discussions](https://github.com/yourusername/bitrix24-ai-assistant/discussions)
-- 📧 Enterprise: info@directadvertising.rs
+- 📧 Enterprise: support@technosoft.dev
 
 ### **Q: How do I report bugs?**
 A: Create a GitHub issue with:

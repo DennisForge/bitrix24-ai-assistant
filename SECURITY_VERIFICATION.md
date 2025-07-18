@@ -463,7 +463,7 @@ jobs:
 - **Penetration Test**: Passed
 - **Code Security Review**: Approved
 
-**Verified by**: Direct Advertising DOO Security Team  
+**Verified by**: TechnoSoft Solutions Security Team  
 **Verification Date**: July 19, 2025  
 **Next Review**: January 19, 2026  
 

@@ -129,7 +129,7 @@ We use [SemVer](http://semver.org/) for versioning:
 
 - 💬 [GitHub Discussions](https://github.com/yourusername/bitrix24-ai-assistant/discussions)
 - 🐛 [Issues](https://github.com/yourusername/bitrix24-ai-assistant/issues)
-- 📧 [Email](mailto:info@directadvertising.rs)
+- 📧 [Email](mailto:support@technosoft.dev)
 
 ## 🎉 Recognition
 

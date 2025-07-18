@@ -498,7 +498,7 @@ This software has been thoroughly tested and meets all quality standards for:
 - ✅ **Reliability** - Stable under normal and stress conditions
 - ✅ **Usability** - User-friendly interface with excellent UX
 
-**Certified by**: Direct Advertising DOO QA Team  
+**Certified by**: TechnoSoft Solutions QA Team  
 **Certification Date**: July 19, 2025  
 **Valid Until**: January 19, 2026  
 

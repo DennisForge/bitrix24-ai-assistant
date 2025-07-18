@@ -257,7 +257,7 @@ docker-compose down -v && docker-compose up -d  # Docker
 ### **Get Support**
 - 🐛 [Report Issues](https://github.com/yourusername/bitrix24-ai-assistant/issues)
 - 💬 [Join Discussions](https://github.com/yourusername/bitrix24-ai-assistant/discussions)
-- 📧 [Enterprise Support](mailto:info@directadvertising.rs)
+- 📧 [Enterprise Support](mailto:support@technosoft.dev)
 
 ---
 
