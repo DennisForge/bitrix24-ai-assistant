@@ -61,7 +61,7 @@ A comprehensive AI-powered assistant for Bitrix24 CRM that provides intelligent 
 ### **Option 1: Docker (Recommended)**
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/bitrix24-ai-assistant.git
+git clone https://github.com/Dennzy88/bitrix24-ai-assistant.git
 cd bitrix24-ai-assistant
 
 # Start with Docker Compose
@@ -74,7 +74,7 @@ open http://localhost:8000/calendar
 ### **Option 2: Local Development**
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/bitrix24-ai-assistant.git
+git clone https://github.com/Dennzy88/bitrix24-ai-assistant.git
 cd bitrix24-ai-assistant
 
 # Create virtual environment
@@ -182,18 +182,7 @@ Contributions are welcome! Please read our [Contributing Guide](docs/CONTRIBUTIN
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🏢 Enterprise Support
-
-**TechnoSoft Solutions** - Professional implementation and support services available.
-
-- 💼 **Custom Integration**: Tailored Bitrix24 setups
-- 🎓 **Training**: Team onboarding and best practices
-- 🛠️ **Maintenance**: Ongoing support and updates
-- 📞 **Priority Support**: 24/7 technical assistance
-
-Contact: [support@technosoft.dev](mailto:support@technosoft.dev)
-
-## 🏗️ Architecture
+## ️ Architecture
 
 ### **Tech Stack**
 - **Backend**: FastAPI + SQLAlchemy + SQLite
@@ -329,14 +318,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🏢 Enterprise Support
 
-**TechnoSoft Solutions** - Professional implementation and support services available.
+**Professional implementation and support services available.**
 
 - 💼 **Custom Integration**: Tailored Bitrix24 setups
 - 🎓 **Training**: Team onboarding and best practices
 - 🛠️ **Maintenance**: Ongoing support and updates
 - 📞 **Priority Support**: 24/7 technical assistance
 
-Contact: [support@technosoft.dev](mailto:support@technosoft.dev)
+Contact: [Open an issue](https://github.com/Dennzy88/bitrix24-ai-assistant/issues) for support requests.
 
 ## 🌟 Screenshots
 
@@ -368,14 +357,14 @@ Contact: [support@technosoft.dev](mailto:support@technosoft.dev)
 
 If this project helped you, please give it a ⭐️!
 
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/bitrix24-ai-assistant?style=social)](https://github.com/yourusername/bitrix24-ai-assistant/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/yourusername/bitrix24-ai-assistant?style=social)](https://github.com/yourusername/bitrix24-ai-assistant/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/Dennzy88/bitrix24-ai-assistant?style=social)](https://github.com/Dennzy88/bitrix24-ai-assistant/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Dennzy88/bitrix24-ai-assistant?style=social)](https://github.com/Dennzy88/bitrix24-ai-assistant/network/members)
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by TechnoSoft Solutions**
+**Built with ❤️ by [Dennzy88](https://github.com/Dennzy88)**
 
 🇷🇸 Made in Serbia • 🚀 Production Ready • 🤖 AI-Powered
 
