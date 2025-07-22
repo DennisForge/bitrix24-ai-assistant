@@ -92,6 +92,28 @@ cp .env.example .env
 python main.py
 ```
 
+### **🛠️ Local Development Setup**
+
+For quick local development and testing:
+
+```bash
+# Clone repository
+git clone https://github.com/Dennzy88/bitrix24-ai-assistant.git
+cd bitrix24-ai-assistant
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate
+
+# Install basic dependencies
+pip install fastapi uvicorn python-multipart python-dotenv pydantic pydantic-settings structlog sqlalchemy aiosqlite greenlet apscheduler
+
+# Run with default SQLite database
+python main.py
+```
+
+**Note**: The application is configured to use SQLite by default for local development. All endpoints will be available at http://localhost:8000
+
 ### **🎯 Demo**
 - **Web Interface**: http://localhost:8000/calendar
 - **API Documentation**: http://localhost:8000/docs
