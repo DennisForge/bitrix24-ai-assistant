@@ -43,9 +43,12 @@ class Settings(BaseSettings):
     
     # OpenAI Settings
     OPENAI_API_KEY: str = Field(..., env="OPENAI_API_KEY")
-    OPENAI_MODEL: str = Field("gpt-4", env="OPENAI_MODEL")
+    OPENAI_MODEL: str = Field("gpt-4o", env="OPENAI_MODEL")  # Updated to latest model
     OPENAI_MAX_TOKENS: int = Field(4000, env="OPENAI_MAX_TOKENS")
     OPENAI_TEMPERATURE: float = Field(0.7, env="OPENAI_TEMPERATURE")
+    OPENAI_CONTEXT_WINDOW: int = Field(128000, env="OPENAI_CONTEXT_WINDOW")  # GPT-4o context window
+    OPENAI_AGENTIC_MODE: bool = Field(True, env="OPENAI_AGENTIC_MODE")  # Enable agentic workflows
+    OPENAI_SERBIAN_OPTIMIZED: bool = Field(True, env="OPENAI_SERBIAN_OPTIMIZED")  # Serbian language optimization
     
     # Email Settings
     EMAIL_HOST: str = Field(..., env="EMAIL_HOST")
@@ -83,6 +86,25 @@ class Settings(BaseSettings):
     AI_AUTO_CATEGORIZE: bool = Field(True, env="AI_AUTO_CATEGORIZE")
     AI_SENTIMENT_ANALYSIS: bool = Field(True, env="AI_SENTIMENT_ANALYSIS")
     AI_TASK_SUGGESTIONS: bool = Field(True, env="AI_TASK_SUGGESTIONS")
+    AI_SMART_SCHEDULING: bool = Field(True, env="AI_SMART_SCHEDULING")  # New smart scheduling
+    AI_CONTEXT_AWARE: bool = Field(True, env="AI_CONTEXT_AWARE")  # Context-aware responses
+    AI_PREDICTIVE_ANALYTICS: bool = Field(True, env="AI_PREDICTIVE_ANALYTICS")  # Predictive features
+    AI_WORKLOAD_OPTIMIZATION: bool = Field(True, env="AI_WORKLOAD_OPTIMIZATION")  # Workload balancing
+    
+    # Performance Settings
+    CACHE_TTL: int = Field(300, env="CACHE_TTL")  # Cache time-to-live in seconds
+    CACHE_ENABLED: bool = Field(True, env="CACHE_ENABLED")  # Enable Redis caching
+    CONNECTION_POOL_SIZE: int = Field(20, env="CONNECTION_POOL_SIZE")  # Database connection pool
+    ASYNC_WORKERS: int = Field(4, env="ASYNC_WORKERS")  # Async worker threads
+    
+    # WebSocket Settings
+    WEBSOCKET_ENABLED: bool = Field(True, env="WEBSOCKET_ENABLED")  # Enable real-time features
+    WEBSOCKET_HEARTBEAT: int = Field(30, env="WEBSOCKET_HEARTBEAT")  # Heartbeat interval
+    
+    # Security Enhancements
+    RATE_LIMIT_ENABLED: bool = Field(True, env="RATE_LIMIT_ENABLED")  # Enable rate limiting
+    RATE_LIMIT_REQUESTS: int = Field(100, env="RATE_LIMIT_REQUESTS")  # Requests per minute
+    AUDIT_LOGGING: bool = Field(True, env="AUDIT_LOGGING")  # Enable audit logging
     
     # Scheduler Settings
     SCHEDULER_ENABLED: bool = Field(True, env="SCHEDULER_ENABLED")
