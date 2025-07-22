@@ -36,16 +36,38 @@ def create_engines():
     """Create database engines for async and sync operations."""
     global async_engine, AsyncSessionLocal, sync_engine, SessionLocal
     
+    # Prepare database URL for async engine
+    database_url = settings.DATABASE_URL
+    if database_url.startswith("postgresql://"):
+        # Convert PostgreSQL URL to async format
+        async_database_url = database_url.replace("postgresql://", "postgresql+asyncpg://")
+        sync_database_url = database_url
+    elif database_url.startswith("sqlite"):
+        # SQLite URLs should already be in correct format
+        async_database_url = database_url
+        sync_database_url = database_url.replace("sqlite+aiosqlite://", "sqlite://")
+    else:
+        async_database_url = database_url
+        sync_database_url = database_url
+    
     # Create async engine
-    async_engine = create_async_engine(
-        settings.DATABASE_URL.replace("postgresql://", "postgresql+asyncpg://"),
-        echo=settings.DATABASE_ECHO,
-        pool_size=settings.DATABASE_POOL_SIZE,
-        max_overflow=settings.DATABASE_MAX_OVERFLOW,
-        poolclass=QueuePool,
-        pool_pre_ping=True,
-        pool_recycle=3600,  # 1 hour
-    )
+    if database_url.startswith("sqlite"):
+        # SQLite doesn't need pool settings
+        async_engine = create_async_engine(
+            async_database_url,
+            echo=settings.DATABASE_ECHO
+        )
+    else:
+        # PostgreSQL with pool settings
+        async_engine = create_async_engine(
+            async_database_url,
+            echo=settings.DATABASE_ECHO,
+            pool_size=settings.DATABASE_POOL_SIZE,
+            max_overflow=settings.DATABASE_MAX_OVERFLOW,
+            poolclass=QueuePool,
+            pool_pre_ping=True,
+            pool_recycle=3600,  # 1 hour
+        )
     
     # Create async session maker
     AsyncSessionLocal = async_sessionmaker(
@@ -57,15 +79,23 @@ def create_engines():
     )
     
     # Create sync engine for migrations
-    sync_engine = create_engine(
-        settings.DATABASE_URL,
-        echo=settings.DATABASE_ECHO,
-        pool_size=settings.DATABASE_POOL_SIZE,
-        max_overflow=settings.DATABASE_MAX_OVERFLOW,
-        poolclass=QueuePool,
-        pool_pre_ping=True,
-        pool_recycle=3600,
-    )
+    if database_url.startswith("sqlite"):
+        # SQLite doesn't need pool settings
+        sync_engine = create_engine(
+            sync_database_url,
+            echo=settings.DATABASE_ECHO
+        )
+    else:
+        # PostgreSQL with pool settings
+        sync_engine = create_engine(
+            sync_database_url,
+            echo=settings.DATABASE_ECHO,
+            pool_size=settings.DATABASE_POOL_SIZE,
+            max_overflow=settings.DATABASE_MAX_OVERFLOW,
+            poolclass=QueuePool,
+            pool_pre_ping=True,
+            pool_recycle=3600,
+        )
     
     # Create sync session maker
     SessionLocal = sessionmaker(

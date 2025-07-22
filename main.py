@@ -24,7 +24,7 @@ from app.core.config import settings
 from app.core.database import init_db, close_db
 from app.core.logging_config import setup_logging
 from app.api.routes import api_router
-from app.services.scheduler import scheduler_service
+from app.services.simple_scheduler import scheduler_service
 
 
 @asynccontextmanager
