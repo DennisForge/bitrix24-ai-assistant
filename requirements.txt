@@ -1,82 +1,149 @@
-# Core dependencies
+# Enhanced Core Dependencies for Bitrix24 AI Assistant
+
+# Core FastAPI and ASGI
 fastapi==0.104.1
-uvicorn==0.24.0
+uvicorn[standard]==0.24.0
 python-multipart==0.0.6
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
 python-dotenv==1.0.0
 
-# Database
+# Enhanced Database with Async Support
 sqlalchemy==2.0.23
+asyncpg==0.29.0  # PostgreSQL async driver
+aiosqlite==0.19.0  # SQLite async driver
 alembic==1.12.1
-psycopg2-binary==2.9.9
-asyncpg==0.29.0
+psycopg2-binary==2.9.9  # PostgreSQL sync driver (fallback)
 
-# Redis and caching
+# Enhanced Redis and Caching
 redis==5.0.1
-celery==5.3.4
+redis[hiredis]==5.0.1  # High-performance Redis client
+aioredis==2.0.1  # Async Redis client
 
-# HTTP client
+# Enhanced AI and OpenAI Integration
+openai==1.3.7  # Latest OpenAI client with GPT-4o support
+tiktoken==0.5.1  # Token counting for OpenAI models
+
+# WebSocket and Real-time Features
+websockets==12.0
+python-socketio==5.10.0
+socketio==0.2.1
+
+# Enhanced HTTP Client
 httpx==0.25.2
 requests==2.31.0
 
-# Date and time
+# Date and Time Handling
 python-dateutil==2.8.2
 pytz==2023.3
 
-# Email
+# Email Integration
 aiosmtplib==3.0.1
 email-validator==2.1.0
 
-# AI and NLP
-openai==1.3.7
-langchain==0.0.350
-transformers==4.35.2
-torch==2.1.1
-
-# Data processing
+# Data Processing and Analytics
 pandas==2.1.3
 numpy==1.25.2
-scipy==1.11.4
 
-# Visualization
-plotly==5.17.0
-matplotlib==3.8.2
-
-# Logging and monitoring
+# Enhanced Logging and Monitoring
 structlog==23.2.0
-sentry-sdk==1.38.0
+prometheus-client==0.19.0
+sentry-sdk[fastapi]==1.38.0
 
-# Testing
-pytest==7.4.3
-pytest-asyncio==0.21.1
-pytest-cov==4.1.0
-httpx==0.25.2
-
-# Development tools
-black==23.11.0
-flake8==6.1.0
-mypy==1.7.1
-pre-commit==3.6.0
-
-# Security
+# Security and Authentication
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
 cryptography==41.0.8
 bcrypt==4.1.2
 
-# Configuration
+# Configuration Management
 pydantic==2.5.0
 pydantic-settings==2.1.0
 
-# File handling
+# Background Tasks and Scheduling
+celery==5.3.4
+apscheduler==3.10.4
+
+# File Handling
 openpyxl==3.1.2
 python-magic==0.4.27
 
-# Bitrix24 API
+# Bitrix24 Integration
 bitrix24-rest-api==1.0.0
 
-# Calendar and scheduling
+# Calendar and iCal Support
 icalendar==5.0.11
 caldav==1.3.6
 
-# Background tasks
-apscheduler==3.10.4
+# Rate Limiting and Security
+slowapi==0.1.9  # Rate limiting for FastAPI
+python-multipart==0.0.6
+
+# Enhanced Performance
+uvloop==0.19.0  # High-performance event loop (Unix only)
+httptools==0.6.1  # Fast HTTP parsing
+
+# Caching Framework
+fastapi-cache2==0.2.1
+aiocache==0.12.2
+
+# WebSocket Extensions
+fastapi-websocket-pubsub==0.3.0
+
+# Enhanced Validation
+validators==0.22.0
+
+# Serbian Language Support
+langdetect==1.0.9
+
+# JSON and Data Serialization
+orjson==3.9.10  # Fast JSON serialization
+msgpack==1.0.7
+
+# Enhanced Error Handling
+tenacity==8.2.3  # Retry mechanisms
+
+# Performance Monitoring
+py-spy==0.3.14  # Python profiler
+
+# Enhanced Development Dependencies (minimal for production)
+rich==13.7.0  # Beautiful terminal output
+typer==0.9.0  # CLI framework
+
+# Database Connection Pooling
+asyncpg==0.29.0
+sqlalchemy[asyncio]==2.0.23
+
+# Enhanced Security
+python-multipart==0.0.6
+itsdangerous==2.1.2
+
+# Task Queue
+dramatiq==1.15.0
+dramatiq[redis]==1.15.0
+
+# Enhanced FastAPI Extensions
+fastapi-users[sqlalchemy]==12.1.2
+fastapi-limiter==0.1.5
+
+# Metrics and Health Checks
+psutil==5.9.6  # System metrics
+
+# Enhanced Async Support
+anyio==4.1.0
+trio==0.23.1
+
+# Data Validation Extensions
+email-validator==2.1.0
+phonenumbers==8.13.25
+
+# Enhanced Configuration
+dynaconf==3.2.4  # Dynamic configuration
+
+# WebSocket Authentication
+fastapi-users[oauth]==12.1.2
+
+# Enhanced Database Utilities
+sqlalchemy-utils==0.41.1
+
+# Performance and Memory Management
+pympler==0.9  # Memory profiling
+objgraph==3.6.0  # Object reference tracking
