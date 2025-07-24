@@ -483,7 +483,7 @@ If this enhanced project helped you, please give it a ⭐️!
 
 <div align="center">
 
-**Built with ❤️ by [Dennzy88](https://github.com/Dennzy88)**
+**Built with ❤️ by [Dennis-Dev](https://github.com/Dennzy88)**
 
 🇷🇸 Made in Serbia • 🚀 Production Ready • 🤖 GPT-4o Enhanced • ⚡ Real-time Collaboration
 
