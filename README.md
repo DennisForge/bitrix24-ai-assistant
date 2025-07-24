@@ -95,7 +95,7 @@ A comprehensive next-generation AI-powered assistant for Bitrix24 CRM that provi
 ### **Option 1: Docker (Recommended)**
 ```bash
 # Clone the repository
-git clone https://github.com/Dennzy88/bitrix24-ai-assistant.git
+git clone https://github.com/DennisForge/bitrix24-ai-assistant.git
 cd bitrix24-ai-assistant
 
 # Start with Docker Compose (includes Redis and PostgreSQL)
@@ -108,7 +108,7 @@ open http://localhost:8000/calendar
 ### **Option 2: Enhanced Local Development**
 ```bash
 # Clone and setup
-git clone https://github.com/Dennzy88/bitrix24-ai-assistant.git
+git clone https://github.com/DennisForge/bitrix24-ai-assistant.git
 cd bitrix24-ai-assistant
 
 # Create virtual environment
@@ -437,7 +437,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Serbian Language Excellence**: Native language processing
 - **Real-time Collaboration**: WebSocket-powered team features
 
-Contact: [Open an issue](https://github.com/Dennzy88/bitrix24-ai-assistant/issues) for enterprise inquiries.
+Contact: [Open an issue](https://github.com/DennisForge/bitrix24-ai-assistant/issues) for enterprise inquiries.
 
 ---
 
@@ -476,14 +476,14 @@ Contact: [Open an issue](https://github.com/Dennzy88/bitrix24-ai-assistant/issue
 
 If this enhanced project helped you, please give it a ⭐️!
 
-[![GitHub Stars](https://img.shields.io/github/stars/Dennzy88/bitrix24-ai-assistant?style=social)](https://github.com/Dennzy88/bitrix24-ai-assistant/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Dennzy88/bitrix24-ai-assistant?style=social)](https://github.com/Dennzy88/bitrix24-ai-assistant/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/DennisForge/bitrix24-ai-assistant?style=social)](https://github.com/DennisForge/bitrix24-ai-assistant/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/DennisForge/bitrix24-ai-assistant?style=social)](https://github.com/DennisForge/bitrix24-ai-assistant/network/members)
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by [Dennis-Dev](https://github.com/Dennzy88)**
+**Built with ❤️ by [DennisForge](https://github.com/DennisForge)**
 
 🇷🇸 Made in Serbia • 🚀 Production Ready • 🤖 GPT-4o Enhanced • ⚡ Real-time Collaboration
 
